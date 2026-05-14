@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>kiran-portfolio | Personal portfolio showcasing my projects, skills, and journey in Python, IoT, Embedded Systems, and web development.</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="kiran-portfolio" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Personal portfolio showcasing my projects, skills, and journey in Python, IoT, Embedded Systems, and web development." />
+<meta property="og:description" content="Personal portfolio showcasing my projects, skills, and journey in Python, IoT, Embedded Systems, and web development." />
+<link rel="canonical" href="https://kirank1-8.github.io/kiran-portfolio/" />
+<meta property="og:url" content="https://kirank1-8.github.io/kiran-portfolio/" />
+<meta property="og:site_name" content="kiran-portfolio" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="kiran-portfolio" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Personal portfolio showcasing my projects, skills, and journey in Python, IoT, Embedded Systems, and web development.","headline":"kiran-portfolio","name":"kiran-portfolio","url":"https://kirank1-8.github.io/kiran-portfolio/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/kiran-portfolio/assets/css/style.css?v=d59fe782b5fe86e91c36f1574de15ab1c290d5e1">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/kiran-portfolio/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+
+      <h1 id="kiran-portfolio">kiran-portfolio</h1>
+<p>Personal portfolio showcasing my projects, skills, and journey in Python, IoT, Embedded Systems, and web development.</p>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
