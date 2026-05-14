@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Kiran Kethanapalli | Portfolio</title>
+
+
+    <!-- ========================= -->
+    <!-- META TAGS -->
+    <!-- ========================= -->
+
+    <meta name="title"
+    content="Kiran Kethanapalli - EEE Student & Developer">
+
+    <meta name="description"
+    content="2nd Year EEE student passionate about Python, IoT, Embedded Systems, and web development.">
+
+    <meta name="keywords"
+    content="Kiran Kethanapalli, Python, IoT, Embedded Systems, HTML, Arduino">
+
+    <meta name="author"
+    content="Kiran Kethanapalli">
+
+
+    <!-- ========================= -->
+    <!-- CSS -->
+    <!-- ========================= -->
+
+    <style>
+
+        /* ========================= */
+        /* WHOLE WEBSITE */
+        /* ========================= */
+
+        *{
+
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(
+                to right,
+                #050816,
+                #021b3a,
+                #003566
+            );
+
+            color:white;
+
+            overflow-x:hidden;
+        }
+
+
+        /* ========================= */
+        /* NAVBAR */
+        /* ========================= */
+
+        nav{
+
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+
+            padding:25px 80px;
+        }
+
+        .logo{
+
+            font-size:32px;
+            font-weight:bold;
+
+            color:#00e5ff;
+        }
+
+        .nav-links{
+
+            display:flex;
+            gap:40px;
+        }
+
+        .nav-links a{
+
+            text-decoration:none;
+            color:white;
+
+            font-size:18px;
+
+            transition:0.3s;
+        }
+
+        .nav-links a:hover{
+
+            color:#00e5ff;
+        }
+
+
+        /* ========================= */
+        /* HERO SECTION */
+        /* ========================= */
+
+        .hero{
+
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+
+            padding:80px;
+
+            min-height:90vh;
+        }
+
+        .hero-text{
+
+            width:50%;
+        }
+
+        .hero-text h2{
+
+            font-size:40px;
+            margin-bottom:10px;
+        }
+
+        .hero-text h1{
+
+            font-size:75px;
+
+            color:#00e5ff;
+
+            margin-bottom:20px;
+        }
+
+        .hero-text p{
+
+            font-size:22px;
+
+            line-height:1.8;
+
+            color:#d8d8d8;
+        }
+
+
+        /* ========================= */
+        /* BUTTONS */
+        /* ========================= */
+
+        .buttons{
+
+            margin-top:35px;
+        }
+
+        .btn{
+
+            padding:15px 35px;
+
+            border-radius:40px;
+
+            text-decoration:none;
+
+            font-size:18px;
+            font-weight:bold;
+
+            margin-right:20px;
+
+            transition:0.3s;
+        }
+
+        .btn-contact{
+
+            background:#00e5ff;
+            color:black;
+        }
+
+        .btn-contact:hover{
+
+            background:white;
+        }
+
+        .btn-projects{
+
+            border:2px solid #00e5ff;
+            color:white;
+        }
+
+        .btn-projects:hover{
+
+            background:#00e5ff;
+            color:black;
+        }
+
+
+        /* ========================= */
+        /* HERO IMAGE */
+        /* ========================= */
+
+        .hero-image{
+
+            width:40%;
+
+            display:flex;
+            justify-content:center;
+        }
+
+        .profile-img{
+
+            width:420px;
+
+            border-radius:30px;
+
+            box-shadow:
+            0px 0px 40px #00e5ff;
+
+            transition:0.5s;
+        }
+
+        .profile-img:hover{
+
+            transform:scale(1.03);
+        }
+
+
+        /* ========================= */
+        /* SECTIONS */
+        /* ========================= */
+
+        section{
+
+            padding:80px;
+        }
+
+        .section-title{
+
+            font-size:50px;
+
+            color:#00e5ff;
+
+            margin-bottom:40px;
+
+            text-align:center;
+        }
+
+
+        /* ========================= */
+        /* ABOUT */
+        /* ========================= */
+
+        .about-text{
+
+            font-size:22px;
+
+            line-height:2;
+
+            text-align:center;
+
+            color:#d8d8d8;
+        }
+
+
+        /* ========================= */
+        /* SKILLS */
+        /* ========================= */
+
+        .skills-container{
+
+            display:flex;
+            flex-wrap:wrap;
+
+            justify-content:center;
+
+            gap:25px;
+        }
+
+        .skill-card{
+
+            padding:20px 40px;
+
+            border-radius:20px;
+
+            background:#0d1b2a;
+
+            border:1px solid #00e5ff;
+
+            font-size:20px;
+
+            transition:0.3s;
+        }
+
+        .skill-card:hover{
+
+            transform:translateY(-5px);
+
+            box-shadow:0px 0px 20px #00e5ff;
+        }
+
+
+        /* ========================= */
+        /* PROJECTS */
+        /* ========================= */
+
+        .projects-container{
+
+            display:grid;
+
+            grid-template-columns:
+            repeat(auto-fit,minmax(300px,1fr));
+
+            gap:30px;
+        }
+
+        .project-card{
+
+            background:#0d1b2a;
+
+            padding:30px;
+
+            border-radius:20px;
+
+            border:1px solid #00e5ff;
+
+            transition:0.3s;
+        }
+
+        .project-card:hover{
+
+            transform:translateY(-8px);
+
+            box-shadow:0px 0px 20px #00e5ff;
+        }
+
+        .project-card h3{
+
+            color:#00e5ff;
+
+            margin-bottom:15px;
+        }
+
+        .project-card p{
+
+            color:#d8d8d8;
+
+            line-height:1.7;
+        }
+
+        .project-card a{
+
+            display:inline-block;
+
+            margin-top:20px;
+
+            color:#00e5ff;
+
+            text-decoration:none;
+
+            font-weight:bold;
+        }
+
+
+        /* ========================= */
+        /* CONTACT */
+        /* ========================= */
+
+        .contact{
+
+            text-align:center;
+        }
+
+        .contact p{
+
+            font-size:22px;
+
+            margin-top:20px;
+        }
+
+
+        /* ========================= */
+        /* FOOTER */
+        /* ========================= */
+
+        footer{
+
+            text-align:center;
+
+            padding:30px;
+
+            background:#020817;
+
+            margin-top:50px;
+        }
+        /* ========================= */
+/* CONTACT LINKS */
+/* ========================= */
+
+.contact-link{
+
+    color:#00e5ff;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    transition:0.3s;
+}
+
+.contact-link:hover{
+
+    color:white;
+
+    text-shadow:0px 0px 10px #00e5ff;
+}
+
+
+        /* ========================= */
+        /* RESPONSIVE */
+        /* ========================= */
+
+        @media(max-width:1000px){
+
+            nav{
+
+                flex-direction:column;
+                gap:20px;
+            }
+
+            .hero{
+
+                flex-direction:column;
+
+                text-align:center;
+            }
+
+            .hero-text{
+
+                width:100%;
+            }
+
+            .hero-image{
+
+                width:100%;
+
+                margin-top:50px;
+            }
+
+            .hero-text h1{
+
+                font-size:55px;
+            }
+
+            .hero-text h2{
+
+                font-size:30px;
+            }
+
+            .profile-img{
+
+                width:300px;
+            }
+
+            section{
+
+                padding:50px 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- ========================= -->
+    <!-- NAVBAR -->
+    <!-- ========================= -->
+
+    <nav>
+
+        <div class="logo">
+
+            కిరణ్ కేథనపల్లి
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ========================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <h2>NAMASKARAM, I'M</h2>
+
+            <h1>Kiran Kethanapalli</h1>
+
+            <p>
+
+                2nd Year EEE Student passionate about
+                Python, IoT, Embedded Systems,
+                and web development.
+
+                Fast learner, project enthusiast,
+                and always ready to explore
+                new technologies and challenges.
+
+            </p>
+
+
+            <div class="buttons">
+
+                <a href="#contact"
+                class="btn btn-contact">
+
+                Contact Me
+
+                </a>
+
+
+                <a href="#projects"
+                class="btn btn-projects">
+
+                View Projects
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ========================= -->
+        <!-- ADD YOUR PHOTO HERE -->
+        <!-- ========================= -->
+
+        <div class="hero-image">
+
+          <img src="./assets/images/myphoto.jpeg"
+           alt="Kiran"
+           class="profile-img">
+
+</div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- ABOUT -->
+    <!-- ========================= -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+
+            About Me
+
+        </h2>
+
+        <p class="about-text">
+
+            NAMASKARAM, I'm Kiran Kethanapalli,
+            a 2nd Year Electrical and Electronics
+            Engineering student.
+
+            I am passionate about Python programming,
+            IoT, Embedded Systems,
+            and web development.
+
+            I enjoy building real-world projects
+            and continuously learning new technologies
+            to improve my skills.
+
+            I am a fast learner,
+            project enthusiast,
+            and always excited to work on
+            innovative ideas and challenges.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- SKILLS -->
+    <!-- ========================= -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+
+            Skills
+
+        </h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">Python</div>
+
+            <div class="skill-card">C Programming</div>
+
+            <div class="skill-card">IoT</div>
+
+            <div class="skill-card">Embedded Systems</div>
+
+            <div class="skill-card">HTML</div>
+
+            <div class="skill-card">Arduino IDE</div>
+
+            <div class="skill-card">Blynk IoT</div>
+
+            <div class="skill-card">PVSyst</div>
+
+            <div class="skill-card">AutoCAD</div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PROJECTS -->
+    <!-- ========================= -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+
+            Projects
+
+        </h2>
+
+        <div class="projects-container">
+
+
+            <div class="project-card">
+
+                <h3>BabyBuddy</h3>
+
+                <p>
+                    Smart project focused on child monitoring and assistance.
+                </p>
+
+                <a href="https://github.com/kirank1-8/Babybuddy"
+                target="_blank">
+
+                View Project →
+
+                </a>
+
+            </div>
+
+
+
+            <div class="project-card">
+
+                <h3>Cricket Score Dashboard</h3>
+
+                <p>
+                    Dashboard project for displaying cricket scores and match details.
+                </p>
+
+                <a href="https://github.com/kirank1-8/cricket_score_dashboard"
+                target="_blank">
+
+                View Project →
+
+                </a>
+
+            </div>
+
+
+
+            <div class="project-card">
+
+                <h3>AI Virtual Mouse</h3>
+
+                <p>
+                    AI-powered virtual mouse using computer vision and hand tracking.
+                </p>
+
+                <a href="https://github.com/kirank1-8/AI-Virtual-Mouse"
+                target="_blank">
+
+                View Project →
+
+                </a>
+
+            </div>
+
+
+
+            <div class="project-card">
+
+                <h3>Flappy Bird Python</h3>
+
+                <p>
+                    Python implementation of the classic Flappy Bird game.
+                </p>
+
+                <a href="https://github.com/kirank1-8/flappy-bird-python"
+                target="_blank">
+
+                View Project →
+
+                </a>
+
+            </div>
+
+
+
+            <div class="project-card">
+
+                <h3>Attendance System using ESP32</h3>
+
+                <p>
+                    IoT-based attendance management system using ESP32.
+                </p>
+
+                <a href="https://github.com/kirank1-8/attendance-system-using-ESP32"
+                target="_blank">
+
+                View Project →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+
+<section id="contact">
+
+    <h2 class="section-title">
+
+        Contact
+
+    </h2>
+
+    <div class="contact">
+
+        <!-- GITHUB -->
+
+        <p>
+
+            <a href="https://github.com/kirank1-8"
+            target="_blank"
+            class="contact-link">
+
+            GitHub: github.com/kirank1-8
+
+            </a>
+
+        </p>
+
+
+        <!-- EMAIL -->
+
+        <p>
+
+            <a href="mailto:kirankethanapalli18@gmail.com"
+            class="contact-link">
+
+            Email: kirankethanapalli18@gmail.com
+
+            </a>
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 Kiran Kethanapalli
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>
